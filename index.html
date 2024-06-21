@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Smart Home Control Dashboard</h1>
+        <div class="device-control">
+            <h2>Devices Control</h2>
+            <div class="device">
+                <h3>Light Control</h3>
+                <button id="light-on">Turn On</button>
+                <button id="light-off">Turn Off</button>
+            </div>
+            <!-- Add more devices as needed -->
+        </div>
+        <div class="home-monitoring">
+            <h2>Home Monitoring</h2>
+            <div class="monitor">
+                <h3>Temperature</h3>
+                <p id="temperature">--</p>
+            </div>
+            <!-- Add more monitoring elements as needed -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
